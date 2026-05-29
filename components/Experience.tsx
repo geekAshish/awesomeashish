@@ -14,8 +14,8 @@ const EXPERIENCE: ExperienceItem[] = [
     company: 'IOT-E Entertainment',
     domain: 'Brand and Ad Films',
     role: 'Video Editor and Motion Designer',
-    duration: 'Mar 2024 - Dec 2025',
-    location: 'Noida, Uttar Pradesh',
+    duration: 'Jan 2025 - Present',
+    location: 'Prayagraj, Uttar Pradesh',
     website: 'https://iot-e.in',
   },
   {
