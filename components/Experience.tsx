@@ -22,9 +22,9 @@ const EXPERIENCE: ExperienceItem[] = [
     company: 'Freelance Projects',
     domain: 'Startups, and Agencies',
     role: 'Video Editor',
-    duration: '2023 - Present',
+    duration: '2024 - Present',
     location: 'Remote',
-    website: 'https://www.linkedin.com/in/geekashish/',
+    website: 'https://www.linkedin.com/in/awesomeashish/',
   },
 ]
 
