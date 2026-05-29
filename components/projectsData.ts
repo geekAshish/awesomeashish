@@ -11,14 +11,14 @@ export type Project = {
 
 export const projects: readonly Project[] = [
   {
-    title: 'Launch Film - Fitness App',
+    title: 'These 6 AI Tools Every Creator Should Know - 100% FREE',
     desc: 'Cut a high-energy launch video that mixed product UI, lifestyle shots, and performance-focused pacing.',
     stack: ['Premiere Pro', 'After Effects', 'Sound Design'],
     category: 'Brand Commercial',
-    runtime: '01:08',
+    runtime: '07:45',
     year: '2026',
-    watch: 'https://www.youtube.com/@ashishedits',
-    breakdown: 'https://youtube.com/ashishedits',
+    watch: 'https://youtu.be/7wUA_4Fngc8?si=Vr0CFKwlgcvs54jG',
+    breakdown: 'https://youtu.be/7wUA_4Fngc8?si=Vr0CFKwlgcvs54jG',
   },
   {
     title: 'YouTube Documentary Edit',
@@ -37,7 +37,7 @@ export const projects: readonly Project[] = [
     runtime: '30 edits',
     year: '2025',
     watch: 'https://www.instagram.com/zeroashish',
-    breakdown: 'https://www.linkedin.com/in/geekashish/',
+    breakdown: 'https://www.linkedin.com/in/awesomeashish/',
   },
   {
     title: 'Product Explainer for SaaS',
