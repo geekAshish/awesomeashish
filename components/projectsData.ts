@@ -22,7 +22,7 @@ export const projects: readonly Project[] = [
   },
   {
     title: 'My Weekly YouTube Workflow',
-    desc: 'Structured long-form interview footage into a story arc with stronger retention and emotional flow.',
+    desc: 'Delivered a daily long-form content batch with hook-first openings, captions.',
     stack: ['Premiere Pro', 'Color Grading', 'Audio Cleanup'],
     category: 'YouTube Long-form',
     runtime: '4:22',
@@ -31,7 +31,7 @@ export const projects: readonly Project[] = [
   },
   {
     title: 'Podcast',
-    desc: 'Delivered a daily long-form content batch with hook-first openings, captions.',
+    desc: 'Structured long-form interview footage into a story arc with stronger retention and emotional flow.',
     stack: ['Premiere Pro', 'After Effects', 'Motion Graphics'],
     category: 'YouTube Long-form',
     runtime: '',
