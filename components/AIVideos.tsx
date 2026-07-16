@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'motion/react'
-import { getYouTubeThumbnailUrl, getYouTubeVideoId } from '@/lib/youtube'
+import { getYouTubeVideoId } from '@/lib/youtube'
 
 type AIVideo = {
   title: string
@@ -58,12 +58,52 @@ const aiVideos: readonly AIVideo[] = [
   },
 ] as const
 
+function getThumbnailUrls(videoId: string): string[] {
+  return [
+    `https://i.ytimg.com/vi/${videoId}/hq720.jpg`,
+    `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`,
+    `https://i.ytimg.com/vi/${videoId}/sddefault.jpg`,
+    `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+    `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`,
+  ]
+}
+
 function AIVideoCard({ video, index }: { video: AIVideo; index: number }) {
   const [isPlaying, setIsPlaying] = useState(false)
+  const [thumbnail, setThumbnail] = useState<string | null>(null)
   const videoId = getYouTubeVideoId(video.url)
-  const thumbnail = getYouTubeThumbnailUrl(video.url)
   const embedUrl = videoId ? `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1` : null
   const isShort = video.type === 'Short'
+
+  useEffect(() => {
+    let isMounted = true
+
+    if (!videoId) return
+
+    const thumbnails = getThumbnailUrls(videoId)
+    let index = 0
+
+    const loadThumbnail = () => {
+      const candidate = thumbnails[index]
+      if (!candidate) return
+
+      const image = new window.Image()
+      image.onload = () => {
+        if (isMounted) setThumbnail(candidate)
+      }
+      image.onerror = () => {
+        index += 1
+        loadThumbnail()
+      }
+      image.src = candidate
+    }
+
+    loadThumbnail()
+
+    return () => {
+      isMounted = false
+    }
+  }, [videoId])
 
   return (
     <motion.article
@@ -131,9 +171,11 @@ function AIVideoCard({ video, index }: { video: AIVideo; index: number }) {
 
       <div className="mt-4">
         <h3 className="text-base font-semibold tracking-tight text-neutral-950 dark:text-white">{video.title}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-          YouTube {video.type.toLowerCase()} edit focused on AI content pacing and retention.
-        </p>
+        {!isShort ? (
+          <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+            YouTube {video.type.toLowerCase()} edit focused on AI content pacing and retention.
+          </p>
+        ) : null}
       </div>
     </motion.article>
   )
