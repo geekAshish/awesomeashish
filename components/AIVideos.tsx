@@ -41,6 +41,21 @@ const aiVideos: readonly AIVideo[] = [
     type: 'Short',
     url: 'https://youtube.com/shorts/JPzqlPy1w3E?feature=share',
   },
+  {
+    title: 'AI Short 04',
+    type: 'Short',
+    url: 'https://youtube.com/shorts/Sh7ZB8xHgnw?feature=share',
+  },
+  {
+    title: 'AI Short 05',
+    type: 'Short',
+    url: 'https://youtube.com/shorts/TzOVIn80sA8?feature=share',
+  },
+  {
+    title: 'AI Short 06',
+    type: 'Short',
+    url: 'https://youtube.com/shorts/PNnoV0sYLJg?feature=share',
+  },
 ] as const
 
 function AIVideoCard({ video, index }: { video: AIVideo; index: number }) {
