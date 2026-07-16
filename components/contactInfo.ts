@@ -1,4 +1,4 @@
-export const CONTACT_EMAIL = 'ashishkushwaha472004@gmail.com'
+export const CONTACT_EMAIL = 'personalashish47@gmail.com'
 
 export const SOCIALS = [
   // { label: 'YouTube', href: 'https://www.youtube.com/@ashishedits' },
