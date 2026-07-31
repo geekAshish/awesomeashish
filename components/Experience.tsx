@@ -19,11 +19,11 @@ const EXPERIENCE: ExperienceItem[] = [
     website: 'https://iot-e.in',
   },
   {
-    company: 'Filmymotion',
+    company: 'Freelance',
     domain: 'Startups, and Agencies',
     role: 'Video Editor',
-    duration: 'Fab 2023 - May 2024',
-    location: 'On-Site',
+    duration: 'May 2023 - present',
+    location: 'Remote',
     website: 'https://www.linkedin.com/in/awesomeashish/',
   },
 ]
