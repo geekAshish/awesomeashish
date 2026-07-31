@@ -90,3 +90,44 @@ body::after {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.video-portfolio {
+  background: #000;
+}
+
+.video-glow-purple {
+  color: #a855f7;
+  text-shadow: 0 0 12px rgba(168, 85, 247, 0.75), 0 0 36px rgba(168, 85, 247, 0.35);
+}
+
+.tool-orbit {
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+  display: grid;
+  height: 4.5rem;
+  width: 4.5rem;
+  place-items: center;
+  border: 1px solid rgba(168, 85, 247, 0.55);
+  border-radius: 1.25rem;
+  background: rgba(24, 24, 27, 0.9);
+  color: #d8b4fe;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  box-shadow: 0 0 28px rgba(168, 85, 247, 0.15);
+  transition: transform 250ms ease, border-color 250ms ease;
+}
+
+.tool-orbit:hover {
+  transform: scale(1.1) rotate(4deg);
+  border-color: #c084fc;
+}
+
+.tool-orbit-one { right: 5%; top: 8%; transform: rotate(-12deg); }
+.tool-orbit-two { right: 3%; bottom: 18%; transform: rotate(10deg); }
+.tool-orbit-three { left: 4%; top: 10%; transform: rotate(-10deg); }
+.tool-orbit-four { bottom: 8%; left: 7%; transform: rotate(12deg); }
+
+@media (max-width: 640px) {
+  .tool-orbit { height: 3.5rem; width: 3.5rem; border-radius: 1rem; font-size: 0.8rem; }
+}

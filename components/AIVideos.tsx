@@ -34,12 +34,12 @@ const aiVideos: readonly AIVideo[] = [
   {
     title: 'AI Short 02',
     type: 'Short',
-    url: 'https://youtube.com/shorts/j3uQxe6fxUY?feature=share',
+    url: 'https://youtube.com/shorts/VHEjAqc8ixs?si=SRmAfcsY1pk1ZspJ',
   },
   {
     title: 'AI Short 03',
     type: 'Short',
-    url: 'https://youtube.com/shorts/JPzqlPy1w3E?feature=share',
+    url: 'https://youtube.com/shorts/XQ_pltw0BzU?si=guIdPom73XI1Amy3',
   },
   {
     title: 'AI Short 04',

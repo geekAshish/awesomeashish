@@ -35,7 +35,7 @@ export default function Testimonials() {
             transition={{ duration: 0.35, delay: idx * 0.06 }}
             className="min-w-[280px] flex-1 rounded-2xl border border-neutral-200/80 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-white/5 dark:backdrop-blur md:min-w-0"
           >
-            <blockquote className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">"{t.quote}"</blockquote>
+            <blockquote className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">&quot;{t.quote}&quot;</blockquote>
             <figcaption className="mt-5 flex items-center gap-3">
               <div className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">{t.name}</div>
             </figcaption>
