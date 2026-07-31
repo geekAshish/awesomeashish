@@ -116,7 +116,7 @@ export default function VideoPortfolioHome() {
   return (
     <main className="video-portfolio min-h-screen overflow-hidden bg-black text-white">
       <header className="sticky top-0 z-50 flex items-center justify-between bg-black/90 px-5 py-6 backdrop-blur-md sm:px-8">
-        <a href="#home" className="text-xl font-bold tracking-widest sm:text-2xl"><span className="font-light text-gray-400">Mr. </span><span className="text-purple-500">iEdit</span></a>
+        <a href="#home" className="text-xl font-bold tracking-widest sm:text-2xl text-white">Ashish Kushwaha</a>
         <nav className="hidden items-center gap-6 text-xs uppercase tracking-[0.2em] text-gray-300 md:flex">
           <a href="#home" className="transition hover:text-purple-400">Home</a>
           <a href="#about" className="transition hover:text-purple-400">About</a>
