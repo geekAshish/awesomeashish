@@ -27,7 +27,7 @@ export const projects: readonly Project[] = [
     category: 'YouTube Long-form',
     runtime: '4:22',
     year: '2026',
-    watch: 'https://youtu.be/Y7utUhm2nXU?si=4hwN6vBG08-7oQ_t',
+    watch: 'https://youtu.be/JFLsjGIVVS4?si=VHbH_TbRPPKpi7f2',
   },
   {
     title: 'Podcast',
